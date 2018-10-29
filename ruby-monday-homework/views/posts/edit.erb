@@ -1,0 +1,8 @@
+<h1>This is the edit page for<%= @songs[:title]%></h1>
+<%= erb :'partials/form', :layout => false%>
+
+<%#  this is for delete only%>
+<form class="" action="/<%= @songs[:id]%>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name='_method' value="Delete">
+</form>

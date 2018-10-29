@@ -1,0 +1,7 @@
+<% @songs.each do |songs|%>
+<div class="">
+  <h2><a href="/<%= songs[:id]%>"><%= songs[:title]%></a></h2>
+  <p><%= songs[:body]%></p>
+</div>
+
+<% end %>

@@ -1,1 +1,0 @@
-# sparta_global_week-6_homework

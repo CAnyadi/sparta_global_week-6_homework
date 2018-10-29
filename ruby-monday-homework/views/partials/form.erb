@@ -1,0 +1,18 @@
+<form class="" action="/<%= @songs[:id]%>" method="post">
+  <div class="">
+    <label>Song Name:</label>
+    <input type="text" name="title" value="<%= @songs[:title]%>" placeholder= "Input song title">
+  </div>
+  <div class="">
+    <label>Content:</label>
+    <textarea name="body" rows="8" cols="80" value="<%= @songs[:body]%>" placeholder="Enter song details here">
+    </textarea>
+  </div>
+  <%#  this is for create only%>
+  <div class="">
+    <% if(@songs[:id])!=""%>
+    <input type="hidden" name="_method" value="PUT">
+    <% end %>
+    <input type="submit" value="Save Post">
+  </div>
+</form>
